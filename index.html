@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Edexcel Maths tutoring. Male students only. First 2 lessons free. GCSE Maths from £8/hr, A-Level from £12/hr.">
+<meta name="keywords" content="Edexcel maths tutor, GCSE maths tutoring UK, A-Level maths tutor, Edexcel tutor online">
+<meta property="og:title" content="M Tutoring | Edexcel Maths">
+<meta property="og:description" content="Male students only. First 2 lessons free. GCSE from £8/hr. A-Level from £12/hr.">
+<title>M Tutoring | Mathematics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar" id="ann-bar">
+  <span>&#x1F393; <strong>Male students only</strong> &nbsp;&middot;&nbsp; Edexcel content &nbsp;&middot;&nbsp; First 2 lessons free</span>
+  <button class="ann-close" onclick="dismissAnn()" aria-label="Close announcement">&#x2715;</button>
+</div>
+ 
+<!-- NAVIGATION -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="#home" class="logo" aria-label="M Tutoring Home">M <span>Tutoring</span></a>
+  <ul class="nav-links" role="list">
+    <li><a href="#subjects">Subjects</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#tips">Study Tips</a></li>
+    <li><a href="#apply" class="nav-cta">Apply Now</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div id="mob-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="#subjects" onclick="closeMenu()">Subjects</a>
+  <a href="#pricing"  onclick="closeMenu()">Pricing</a>
+  <a href="#tips"     onclick="closeMenu()">Study Tips</a>
+  <a href="#apply"    onclick="closeMenu()" class="mob-cta">Apply Now</a>
+</div>
+ 
+<!-- HERO -->
+<section class="hero" id="home" aria-label="Hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+  <div class="hero-symbols" aria-hidden="true">
+    <span class="sym" style="font-size:5rem;top:10%;left:5%;animation-delay:0s">&int;</span>
+    <span class="sym" style="font-size:4rem;top:68%;left:4%;animation-delay:3s">&Sigma;</span>
+    <span class="sym" style="font-size:4.5rem;top:15%;right:8%;animation-delay:5s">&pi;</span>
+    <span class="sym" style="font-size:3.5rem;top:72%;right:6%;animation-delay:1.5s">&radic;</span>
+    <span class="sym" style="font-size:4rem;top:42%;left:52%;animation-delay:2.5s">&pound;</span>
+    <span class="sym" style="font-size:3.5rem;top:82%;left:36%;animation-delay:2s">&Delta;</span>
+    <span class="sym" style="font-size:3.5rem;top:28%;right:24%;animation-delay:6s">%</span>
+  </div>
+  <div class="hero-content">
+    <div class="badge-row">
+      <span class="badge badge-green"><span class="badge-dot"></span> Edexcel Examboard Only</span>
+      <span class="badge badge-orange">&#x1F393; Male Students Only</span>
+    </div>
+    <h1>Maths <br><span class="text-grad">Tutoring</span></h1>
+    <p class="hero-desc">Personalised 1-to-1 Edexcel tuition for GCSE Maths and A-Level Maths. Your first <strong>two lessons are completely free</strong> &mdash; no commitment required.</p>
+    <div class="hero-btns">
+      <a href="#apply" class="btn-primary">Start with 2 Free Lessons</a>
+      <a href="#pricing" class="btn-outline">View Pricing &rarr;</a>
+    </div>
+    <div class="hero-chips">
+      <span class="chip">&#10003; From &pound;8/hr</span>
+      <span class="chip">&#10003; First 2 Lessons Free</span>
+      <span class="chip">&#10003; Personalised Plan</span>
+      <span class="chip">&#10003; Edexcel Only</span>
+      <span class="chip">&#10003; Cancel After Free Sessions</span>
+    </div>
+  </div>
+</section>
+ 
+<!-- SUBJECTS -->
+<section id="subjects" class="section-off" aria-label="Subjects">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="sec-label">Subjects Offered</span>
+      <h2>What I Teach</h2>
+      <p class="sec-sub"> Edexcel Maths tuition &mdash; no other exam boards are covered. Fully tailored to your specification and level.</p>
+    </div>
+    <div class="subj-grid">
+ 
+      <!-- Maths -->
+      <div class="subj-card card-blue reveal delay-1">
+        <div class="card-body">
+          <div class="card-icon" aria-hidden="true">&#x1F4D0;</div>
+          <h3>Mathematics</h3>
+          <div class="level-badges">
+            <span class="level-badge">GCSE &mdash; &pound;8/hr</span>
+            <span class="level-badge">A-Level &mdash; &pound;12/hr</span>
+          </div>
+          <div class="board-tag">&#x1F4CB; Edexcel Only &nbsp;&middot;&nbsp; Foundation &amp; Higher (GCSE) &nbsp;&middot;&nbsp; Full A-Level</div>
+          <p>Structured, focused sessions that adapt as your understanding grows. From foundational GCSE algebra to advanced A-Level calculus &mdash; every lesson is built around where you are and where you need to be.</p>
+          <ul class="topic-list">
+            <li>Algebra &amp; Equations</li>
+            <li>Calculus (Differentiation &amp; Integration)</li>
+            <li>Statistics &amp; Probability</li>
+            <li>Mechanics</li>
+            <li>Trigonometry &amp; Geometry</li>
+            <li>Proof &amp; Sequences</li>
+          </ul>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div class="male-notice reveal">
+      <span class="notice-icon" aria-hidden="true">&#x1F393;</span>
+      <p><strong>Please note:</strong> This tutoring service is available to <strong>male students only</strong>. Applications from female students cannot be accepted at this time.</p>
+    </div>
+  </div>
+</section>
+ 
+<!-- PRICING -->
+<section id="pricing" aria-label="Pricing">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="sec-label">Pricing</span>
+      <h2>Clear, Affordable Rates</h2>
+      <p class="sec-sub">Your first <strong>2 lessons are completely free</strong>. After that, choose the rate that works for you. Sessions with structured according to a plan, which could become more personalised, and adjusted if the student requires it.</p>
+    </div>
+ 
+    <div class="free-banner reveal">
+      <div class="free-icon" aria-hidden="true">&#x1F381;</div>
+      <div>
+        <h3>First 2 Lessons Are Completely Free</h3>
+        <p>Every new student receives their first 2 tutoring sessions at no cost &mdash; no commitment, no strings attached. Just excellent teaching from day one.</p>
+      </div>
+    </div>
+ 
+    <h3 class="section-h3 reveal">Standard Hourly Rates</h3>
+    <div class="price-grid reveal">
+      <div class="price-card">
+        <div class="price-subject-name">GCSE Mathematics</div>
+        <div class="price-board-name">Edexcel &middot; Foundation &amp; Higher</div>
+        <div class="price-figure"><sup>&pound;</sup>8<sub>/hr</sub></div>
+        <ul class="price-features">
+          <li>First 2 lessons completely free</li>
+          <li>Personalised plan as lessons progress, if needed</li>
+          <li>Edexcel past paper practice</li>
+          <li>Max 4 hours per week &middot; 2-hour sessions</li>
+        </ul>
+        <a href="#apply" class="price-cta cta-blue">Apply Now</a>
+      </div>
+      <div class="price-card">
+        <div class="price-subject-name">A-Level Mathematics</div>
+        <div class="price-board-name">Edexcel &middot; Full A-Level</div>
+        <div class="price-figure"><sup>&pound;</sup>12<sub>/hr</sub></div>
+        <ul class="price-features">
+          <li>First 2 lessons completely free</li>
+          <li>Personalised plan as lessons progress, if needed</li>
+          <li>Edexcel past paper practice</li>
+          <li>Max 4 hours per week &middot; 2-hour sessions</li>
+        </ul>
+        <a href="#apply" class="price-cta cta-blue">Apply Now</a>
+      </div>
+ 
+    </div>
+ 
+    <p class="cancel-note reveal">&#x2139;&#xFE0F; You may cancel completely free of charge after your 2 free sessions if you wish. There is no obligation to continue.</p>
+    <div class="special-offer reveal">
+      <div class="offer-tag">&#x1F525; Special Offer</div>
+      <h3>Reduced Rates for a 3-Month Commitment</h3>
+      <p>Commit to 3 months of regular sessions upfront and receive a reduced hourly rate &mdash; ideal for students with exams on the horizon.</p>
+      <div class="offer-cards">
+        <div class="offer-card">
+          <div class="offer-subj">GCSE Maths</div>
+          <div class="offer-was">Was &pound;8/hr</div>
+          <div class="offer-now"><sup>&pound;</sup>6<sub>/hr</sub></div>
+          <div class="offer-save">Save &pound;2 per hour</div>
+        </div>
+        <div class="offer-card">
+          <div class="offer-subj">A-Level Maths</div>
+          <div class="offer-was">Was &pound;12/hr</div>
+          <div class="offer-now"><sup>&pound;</sup>10<sub>/hr</sub></div>
+          <div class="offer-save">Save &pound;2 per hour</div>
+        </div>
+ 
+      </div>
+      <p class="offer-sessions-note">&#x1F4CB; All sessions: max 4 hours per week &middot; each session is 2 hours &middot; cancel after 2 free sessions at no charge</p>
+      <a href="#apply" class="btn-primary" style="display:inline-block;margin-top:1.25rem">Apply for 3-Month Rate</a>
+    </div>
+  </div>
+</section>
+ 
+ 
+ 
+<!-- APPLICATION -->
+<section id="apply" aria-label="Apply for tutoring">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="sec-label">Get Started</span>
+      <h2>Apply for Tutoring</h2>
+      <p class="sec-sub" style="margin:0 auto">Fill in the form and I&rsquo;ll be in touch within 24 hours. Your first 2 lessons are completely free.</p>
+    </div>
+    <div class="apply-grid">
+ 
+      <!-- Info column -->
+      <div class="apply-info reveal delay-1">
+        <h3>What happens after you apply?</h3>
+        <p class="apply-desc">After submitting, I&rsquo;ll contact you within 24 hours to arrange your first free session. We begin with a short diagnostic to understand exactly where to focus.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div><h4>Submit your application</h4><p>Choose your subject and tell me your goals and exam date.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div><h4>I&rsquo;ll contact you</h4><p>I&rsquo;ll get in touch within 24 hours to schedule your first free session.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div><h4>2 free sessions</h4><p>Your first 2 lessons are completely free &mdash; we establish your level and start building a plan.</p></div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div><h4>Regular sessions</h4><p>A maximum of 4 hours per week, delivered as 2-hour sessions. You can cancel completely free of charge after your 2 free sessions if you wish &mdash; or continue at your chosen rate.</p></div>
+          </div>
+        </div>
+        <div class="male-notice" style="margin-top:1.75rem">
+          <span class="notice-icon" aria-hidden="true">&#x1F393;</span>
+          <p><strong>Male students only.</strong> Applications from female students cannot be accepted at this time.</p>
+        </div>
+      </div>
+ 
+      <!-- Form column -->
+      <div class="form-box reveal delay-2">
+        <h3>&#x1F4DD; Student Application</h3>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-fname">First Name *</label>
+            <input type="text" id="f-fname" placeholder="e.g. James" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="f-lname">Last Name *</label>
+            <input type="text" id="f-lname" placeholder="e.g. Smith" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-email">Email Address *</label>
+          <input type="email" id="f-email" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone Number *</label>
+          <input type="tel" id="f-phone" placeholder="07xxx xxxxxx" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="f-subject">Subject *</label>
+          <select id="f-subject">
+            <option value="">Select a subject</option>
+            <option value="Edexcel GCSE Mathematics">Edexcel GCSE Mathematics</option>
+            <option value="Edexcel A-Level Mathematics">Edexcel A-Level Mathematics</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-current">Current Grade</label>
+            <input type="text" id="f-current" placeholder="e.g. C / Grade 5">
+          </div>
+          <div class="field">
+            <label for="f-target">Target Grade</label>
+            <input type="text" id="f-target" placeholder="e.g. A / Grade 9">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-rate">Preferred Rate</label>
+          <select id="f-rate">
+            <option value="">Select rate type</option>
+            <option value="Standard rate (no commitment)">Standard rate (no commitment)</option>
+            <option value="3-month commitment (reduced rate)">3-month commitment (reduced rate)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-goals">Goals &amp; Exam Date</label>
+          <textarea id="f-goals" placeholder="Tell me your goals, exam date, and anything else useful..."></textarea>
+        </div>
+        <div class="field-checkbox">
+          <input type="checkbox" id="f-consent">
+          <label for="f-consent">I consent to my personal information being stored and used to contact me about tutoring services. *</label>
+        </div>
+        <div id="form-status" class="form-status" role="alert"></div>
+        <button class="submit-btn" id="submit-btn" onclick="submitApplication()">Submit Application &rarr;</button>
+        <p class="form-note">By submitting you confirm you are a male student. Your details will only be used to contact you about tutoring.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer aria-label="Site footer">
+  <div class="foot-content">
+    <div class="foot-brand">
+      <a href="#home" class="logo foot-logo" aria-label="M Tutoring Home">M<span>Tutoring</span></a>
+      <p>1-to-1 Edexcel Maths tuition.<br>Male students only &middot; First 2 lessons free.</p>
+      <a href="mailto:bizli765@gmail.com" class="foot-email">&#x1F4E7; bizli765@gmail.com</a>
+    </div>
+    <div class="foot-col">
+      <h4>Subjects</h4>
+      <ul>
+        <li><a href="#subjects">Edexcel GCSE Maths</a></li>
+        <li><a href="#subjects">Edexcel A-Level Maths</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Pricing</h4>
+      <ul>
+        <li><a href="#pricing">Standard Rates</a></li>
+        <li><a href="#pricing">3-Month Special Offer</a></li>
+        <li><a href="#pricing">First 2 Lessons Free</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>More</h4>
+      <ul>
+        <li><a href="#tips">Study Tips</a></li>
+        <li><a href="#apply">Apply Now</a></li>
+        <li><a href="mailto:bizli765@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+  </div>
+</footer>
+ 
+<!-- BACK TO TOP -->
+<button class="back-top" id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">&#x2191;</button>
+ 
+<!-- ADMIN PANEL — Press Ctrl+Shift+A to open and view stored applications -->
+<div class="admin-overlay" id="admin-overlay" onclick="if(event.target===this)closeAdmin()" role="dialog" aria-label="Application database">
+  <div class="admin-modal">
+    <div class="admin-modal-head">
+      <div>
+        <h3>&#x1F4CB; Application Database <span class="admin-count-badge" id="admin-count">0 applications</span></h3>
+        <p class="admin-hint">Ctrl+Shift+A to open &nbsp;&middot;&nbsp; Data stored in your browser &nbsp;&middot;&nbsp; Export CSV to back up</p>
+      </div>
+      <button class="admin-close-btn" onclick="closeAdmin()" aria-label="Close admin panel">&#x2715;</button>
+    </div>
+    <div class="admin-modal-body" id="admin-body"></div>
+    <div class="admin-modal-foot">
+      <button class="admin-btn export-btn" onclick="exportCSV()">&#x2B07; Export CSV</button>
+      <button class="admin-btn clear-btn"  onclick="clearAllData()">&#x1F5D1; Clear All</button>
+    </div>
+  </div>
+</div>
+ 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+ 
